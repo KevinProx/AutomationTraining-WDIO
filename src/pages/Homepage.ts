@@ -7,7 +7,6 @@ class Homepage extends Page {
   get resultsList()   { return $('#resultStats'); }
 
   open() {
-      browser.maximizeWindow();
       super.open('https://google.com');
       browser.pause(1000);
   }

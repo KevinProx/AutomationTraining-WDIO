@@ -9,7 +9,6 @@ const capabilities = debug ?
     }];
 
 const maxInstances = debug ? 1 : 10;
-let scenarioCounter = 0;
 
 exports.config = {
 
@@ -27,13 +26,9 @@ exports.config = {
 
     capabilities: capabilities,
 
-    // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'silent',
 
     execArgv: execArgv,
-
-    // If you only want to run your tests until a specific amount of tests have failed use
-    // bail (default is 0 - don't bail, run all tests).
     bail: 0,
 
     baseUrl: 'http://localhost:3112',
@@ -81,9 +76,5 @@ exports.config = {
             },
         ],
         require: ['./src/stepDefinitions/*.steps.ts'],
-    },
-
-    onPrepare: () => {
-        require('ts-node').register({ files: true });
     }
 };
