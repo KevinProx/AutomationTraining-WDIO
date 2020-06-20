@@ -7,6 +7,7 @@
 
 ## Usage
 
+    nvm use
     npm install
     npm run test
     npm run test:debug
@@ -14,6 +15,7 @@
 
 ### Dependencies
 
+- Node 12+ version installed
 - Java must be installed to run allure reports
 
 ### Base

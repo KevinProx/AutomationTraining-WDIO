@@ -83,17 +83,7 @@ exports.config = {
         require: ['./src/stepDefinitions/*.steps.ts'],
     },
 
-    before: function(capabilities, specs) {
+    onPrepare: () => {
         require('ts-node').register({ files: true });
-    },
-
-    beforeFeature: function(uri, feature, scenarios) {
-        scenarioCounter = 0;
-    },
-
-    afterStep: function(uri, feature, { error }) {
-        if (error !== undefined) {
-            browser.takeScreenshot();
-        }
     }
 };

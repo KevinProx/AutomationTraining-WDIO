@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1592675997003' stop='1592675997219'>
+    <name>Performing a Google Search</name>
+    <title>Performing a Google Search</title>
+    <test-cases>
+        <test-case start='1592675997014' status='failed' stop='1592675997033'>
+            <name>Performing a search operation</name>
+            <title>Performing a search operation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.106'/>
+            </parameters>
+            <steps>
+                <step start='1592675997023' status='failed' stop='1592675997033'>
+                    <name>Given I am on the search page</name>
+                    <title>Given I am on the search page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1592675997041' status='canceled' stop='1592675997041'>
+                    <name>When I enter "Search line" into the search box</name>
+                    <title>When I enter "Search line" into the search box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1592675997041' status='canceled' stop='1592675997041'>
+                    <name>And I click the search button</name>
+                    <title>And I click the search button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1592675997042' status='canceled' stop='1592675997042'>
+                    <name>Then I should see a list of search results</name>
+                    <title>Then I should see a list of search results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected {} to equal 'Google'</message>
+                <stack-trace>AssertionError: expected {} to equal 'Google'
+                    at HomepageSearchSteps.givenOnHomepage (/Users/kprox/work/AutomationTraining-WDIO/src/stepDefinitions/homepage-search.steps.ts:11:16)
+                    at World.bindingFunc (/Users/kprox/work/AutomationTraining-WDIO/node_modules/cucumber-tsflow/src/binding-decorator.ts:161:22)
+                    at World.executeAsync (/Users/kprox/work/AutomationTraining-WDIO/node_modules/@wdio/utils/build/shim.js:68:13)
+                    at World.testFrameworkFnWrapper (/Users/kprox/work/AutomationTraining-WDIO/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:51:28)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1592675997058' status='failed' stop='1592675997070'>
+            <name>Performing a search operation with passing test data as data table</name>
+            <title>Performing a search operation with passing test data as data table</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.106'/>
+            </parameters>
+            <steps>
+                <step start='1592675997066' status='failed' stop='1592675997070'>
+                    <name>Given I am on the search page</name>
+                    <title>Given I am on the search page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1592675997072' status='canceled' stop='1592675997072'>
+                    <name>When I enter "Search line" into the search box</name>
+                    <title>When I enter "Search line" into the search box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1592675997072' status='canceled' stop='1592675997072'>
+                    <name>And I click the search button</name>
+                    <title>And I click the search button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1592675997079' status='canceled' stop='1592675997079'>
+                    <name>Then I should see a list of search results</name>
+                    <title>Then I should see a list of search results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected {} to equal 'Google'</message>
+                <stack-trace>AssertionError: expected {} to equal 'Google'
+                    at HomepageSearchSteps.givenOnHomepage (/Users/kprox/work/AutomationTraining-WDIO/src/stepDefinitions/homepage-search.steps.ts:11:16)
+                    at World.bindingFunc (/Users/kprox/work/AutomationTraining-WDIO/node_modules/cucumber-tsflow/src/binding-decorator.ts:161:22)
+                    at World.executeAsync (/Users/kprox/work/AutomationTraining-WDIO/node_modules/@wdio/utils/build/shim.js:68:13)
+                    at World.testFrameworkFnWrapper (/Users/kprox/work/AutomationTraining-WDIO/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:51:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
